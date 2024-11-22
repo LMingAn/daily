@@ -1,0 +1,91 @@
+<!-- vue-2-9.html -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>生命周期钩子函数综合应用</title>
+		<meta charset="utf-8">
+		<script src="../vue.js"></script>
+	<body>
+		<div id="vue29">
+			<h3>{{ information }}</h3>			
+			<input type="button" v-on:click="changeInformation" value="改变信息" />
+			<input type="button" @click="destroyVM" value="销毁Vue实例" />
+		</div>
+		<script type="text/javascript">
+			var myViewModel = new Vue({
+				el: '#vue29',
+				data: {
+					information: "欢迎您！"
+				},
+				methods: {
+					changeInformation:function() {
+						this.information = '我来了，您在哪里？';
+					},
+					destroyVM:function() {
+						myViewModel.$destroy();
+					}
+				},
+				beforeCreate: function() {
+					console.group('======beforeCreate=======');
+					console.log("el:" + this.$el+"，data:" + this.$data); //undefined					
+					console.log("information:" + this.information); //undefined
+					console.groupEnd('======beforeCreate=======');
+				},
+				created: function() {
+					console.group('======created=========');
+					console.log("el:" + this.$el+"，data:" + this.$data);//[object Object]已被初始化
+					console.log("information:" + this.information); //已被初始化
+					console.groupEnd('======created=========');
+				},
+				beforeMount: function() {
+					console.group('======beforeMount ========');
+					console.log("el:" + (this.$el)); //已被初始化
+					console.log(this.$el); // 当前挂载的元素
+					console.log("data:" + this.$data); //已被初始化
+					console.log("information:" + this.information); //已被初始化
+					console.groupEnd('======beforeMount ========');
+				},
+				mounted: function() {
+					console.group('======mounted =========');
+					console.log("el: " + this.$el); //已被初始化
+					console.log(this.$el);
+					console.log( "data: " + this.$data); //已被初始化
+					console.log("information: " + this.information); //已被初始化
+					console.groupEnd('======mounted =========');
+				},
+				beforeUpdate: function() {
+					console.group('======beforeUpdate ========='); //页面渲染新数据之前
+					console.log( "el: " + this.$el);
+					console.log(this.$el);
+					console.log("data: " + this.$data);
+					console.log("information: " + this.information);
+					console.groupEnd('======beforeUpdate =========');
+				},
+				updated: function() {
+					console.group('======updated =========');
+					console.log( "el: " + this.$el);
+					console.log(this.$el);
+					console.log("data: " + this.$data);
+					console.log("information: " + this.information);
+					console.groupEnd('======updated =========')
+				},
+				beforeDestroy: function() {
+					console.group('======beforeDestroy ==========');
+					console.log( "el: " + this.$el);
+					console.log(this.$el);
+					console.log( "data: " + this.$data);
+					console.log("information: " + this.information);
+					console.groupEnd('======beforeDestroy ==========')
+				},
+				destroyed: function() {
+					console.group('======destroyed ===========');
+					console.log("el: " + this.$el);
+					console.log(this.$el);
+					console.log("data: " + this.$data);
+					console.log("information: " + this.information)
+					console.groupEnd('======destroyed ===========')
+				}
+			})
+		</script>
+	</body>
+</html>

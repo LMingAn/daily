@@ -1,0 +1,41 @@
+<!-- vue-2-11.html -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>数据与方法的应用</title>
+		<script type="text/javascript" src="../vue.js"></script>
+	</head>
+	<body>
+		<div id="vue211">
+			{{name}},{{age}}
+		</div>
+		<script type="text/javascript">
+			//定义数据对象,JS对象
+			var dataModel = {
+				name: '储久良',
+				age: 55
+			};
+			//定义模型视图实例
+			var myViewModel = new Vue({
+				el: "#vue211",
+				data: dataModel,
+			})
+			console.log(dataModel.name) //储久良
+			//修改JS对象的属性，Vue实例对象的数据属性同步发生变化
+			dataModel.name = "陈起军";
+			console.log(dataModel.name) //陈起军
+			//修改Vue实例的数据属性，也同步修改JS对象的属性
+			myViewModel.name = "刘有军"
+			console.log(dataModel.name) //刘有军
+			//错误的方法：给Vue实例中对象添加新属性,不能被渲染
+			myViewModel.no = "20190910"
+			console.log(myViewModel.no) //20190910 ,但并没有写入data对象中
+			console.dir(myViewModel.$data) //列出对象
+			//正确方法1:给JS对象添加新属性-no,score			
+			dataModel.no = "20190909";
+			this.dataModel.score = '96'
+			console.dir(myViewModel.$data)
+		</script>
+	</body>
+</html>

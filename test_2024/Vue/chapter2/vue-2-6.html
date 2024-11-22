@@ -1,0 +1,49 @@
+<!-- vue-2-6.html -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>计算属性的getter与setter属性的应用</title>
+		<script src="../vue.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<h3>计算属性的getter与setter属性的应用</h3>
+		<div id="vue26">
+			<h4>初始信息：</h4>
+			<p v-once>志愿学校/专业：{{university}}/{{specialty}}</p>			
+			<h4>computed设置后立即更新：</h4>
+			<p>志愿学校/专业：{{university}}/{{specialty}}</p>		
+			<h4>methods单击按钮时才更新：</h4>
+			<button type="button" v-on:click="set()">set更新</button>
+			<p>志愿学校/专业：{{university}}/{{specialty}}</p>		
+		</div>
+		<script type="text/javascript">
+			var myViewModel = new Vue({
+				el: "#vue26",
+				data: {
+					university: "清华大学",
+					specialty: "人工智能"
+				},
+				computed: {
+					myVolunteer: {
+						set: function(newValue) {
+							var nuiName = newValue.split(' ');
+							this.university = nuiName[0];
+							this.specialty = nuiName[nuiName.length - 1];
+						},
+						get: function() {
+							return this.university + "/" + this.specialty;
+						}
+					}
+				},
+				methods:{
+					set:function(){
+						this.university="同济大学"
+						this.specialty="建筑工程"
+					}
+				}
+			});
+			myViewModel.myVolunteer = '南京大学 大数据科学与技术';
+		</script>
+	</body>
+</html>

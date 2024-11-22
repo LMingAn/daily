@@ -1,0 +1,52 @@
+<!-- vue-2-7.html -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>侦听属性的应用</title>
+		<script type="text/javascript" src="../vue.js"></script>
+	</head>
+	<body>
+		<div id="vue27">
+			<h3>银行帐户余额变更通知</h3>
+			<p>帐号：2222123123123213</p>
+			<p v-once>余额为：{{count}}</p>
+			支取人民币：<input type="text" name="" id="" v-model="money" />
+			<button type="button" v-on:click="changeMoney()">支取{{money}}元</button>
+			<p>支取后余额为：{{count}}元</p>
+			<h3>以下是支出明细帐</h3>
+			<hr >
+		</div>		
+		<div id="detail"></div>
+		<script type="text/javascript">
+			function $(id) {
+				return document.getElementById(id);
+			}
+			function writeDetail() {				
+				$("detail").innerHTML += "<p>第" + myViewModel.loop + "次, 支取"
+				 + myViewModel.money + "元，余额为" + myViewModel.count +"</p>";
+			}
+			var myViewModel = new Vue({
+				el: "#vue27",
+				data: {
+					count: 100000,
+					money: 500,
+					loop: 0
+				},
+				watch: {
+					count(newValue, oldValue) {
+						alert('帐户余额由 :' + oldValue + ' 变为 ' + newValue + '元!');
+					}
+				},
+				methods: {
+					changeMoney() {
+						this.loop = this.loop + 1;
+						this.count = this.count - this.money;
+						writeDetail() //计入明细帐
+					}
+				}
+			});
+			// myViewModel.count=99500;//直接修改,同样可以渲染数据
+		</script>
+	</body>
+</html>

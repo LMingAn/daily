@@ -1,0 +1,139 @@
+<!-- vue-ex-2-2.html -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>邮购商品业务</title>
+		<script src="../vue/js/vue.js" type="text/javascript"></script>
+		<style type="text/css">
+			table {
+				border: 1px;
+				border-collapse: collapse;
+				border-color: #008000;
+				width: 626px;
+				text-align: center;
+				margin: 0 auto;
+			}
+
+			input {
+				width: 150px;
+				height: 25px;
+				border-radius: 4px;
+			}
+
+			tr {
+				height: 30px;
+			}
+
+			fieldset {
+				margin: 0 auto;
+				padding:10px;
+				width: 600px;
+				border: 1px double #008000;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="vue-e-22">
+			<div>
+				<form>
+					<fieldset id="">
+						<legend align="center">邮购商品业务</legend>
+						客户姓名：<input type="text" v-model="name" key="name" />
+						单价：<input v-model='price' type="text" key="price" /><br>
+						数量：<input v-model="count" type="text" key="count" />
+						购买价：<input type="text" v-model="total" key="total" readonly><br>
+						运费：{{freight}}
+						总价：<input type="text" readonly v-model="sum" key="sum"><br>
+						注：购买价>=100元免运费<br>
+						<input type="button" @click="add()" value="记入流水">
+						<input type="button" @click="clear()" value="重置" />
+					</fieldset>
+				</form>
+			</div>
+
+			<table border="1">
+				<caption>销售流水帐</caption>
+				<thead>
+					<tr>
+						<th>业务时间</th>
+						<th>客户姓名</th>
+						<th>购买价</th>
+						<th>运费</th>
+						<th>总金额</th>
+				</thead>
+				</tr>
+				<tbody>
+					<tr v-for="(item,index) in business">
+						<td>{{item.dateTime|dateFormat}}</td>
+						<td>{{item.name}}</td>
+						<td>{{item.totalAll}}</td>
+						<td>{{item.freight}}</td>
+						<td>{{item.sumTotal}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<script type="text/javascript">
+			Vue.filter('dateFormat', function(date) {
+				let dy = date.getFullYear();
+				let dm = date.getMonth()+1;
+				let dd = date.getDate();
+				let dhs = date.getHours();
+				let dms = date.getMinutes();
+				let dss = date.getSeconds();
+				let dmss = date.getMilliseconds();				
+				return `${dy}-${dm}-${dd}  ${dhs}:${dms}:${dss}:${dmss}`
+			});
+			var vm = new Vue({
+				el: '#vue-e-22',
+				data: {
+					dateTime:new Date(),
+					name: '',
+					price: '',
+					count: '',
+					freight: "",
+					totalAll: '',
+					sumTotal: "",
+					business: [],
+				},
+				methods: {
+					clear: function() {
+						this.name = "";
+						this.price = "";
+						this.count = "";
+					},
+					add: function() {
+						if (this.name.length != 0) {
+							this.business.push({
+								dateTime: this.dateTime,
+								name: this.name,
+								totalAll: this.total,
+								freight: this.freight,
+								sumTotal: this.sum,
+
+							})
+						} else {
+							alert("请输入相关信息！！")
+						}
+					}
+				},
+				computed: {
+					total: function() {
+						if (this.price.length > 0 && this.count.length > 0) {
+							var sum = (this.price * this.count).toFixed(2);
+							return sum
+						}
+					},
+					sum: function() {
+						if (this.price.length > 0 && this.count.length > 0) {
+							this.freight = (this.price * this.count > 100) ? 0 : 10
+							var total = (this.price * this.count + this.freight).toFixed(2)
+							return total
+						}
+					}
+				}
+			})
+		</script>
+	</body>
+</html>

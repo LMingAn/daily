@@ -1,0 +1,29 @@
+<!-- vue-2-1.html -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>MVVM模式的应用</title>
+	</head>
+	<body>
+		<!--定义View -->
+		<div id="vue21">
+			<h3>商品清单</h3>
+			<ol>
+				<li v-for="shopping in shoppings">{{shopping.name}} </li>
+			</ol>
+		</div>
+	</body>
+	<script src="../vue/js/vue.js"></script>
+	<script>
+		//定义Model,并设置选项shoppings的值
+		var myModel = {
+			shoppings: [{name: '苹果手机'}, {name: '笔记本电脑'}, {name: 'iPad'}]
+		};
+		// 创建一个Vue根实例,也称为ViewModel,用来连接View与Model
+		var myViewModel = new Vue({
+			el: '#vue21',
+			data: myModel
+		});
+	</script>
+</html>

@@ -1,0 +1,81 @@
+<!-- vue-2-12.html -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>data对象的属性与方法</title>
+		<script type="text/javascript" src="../vue/js/vue.js"></script>
+	</head>
+	<body>
+		<div id="vue212">
+			<h3>添加对象数组元素:学生信息</h3>
+			<ul>
+				<li v-for="student in students">{{student.no}}-{{student.name}}-{{student.sex}}</li>
+			</ul>
+			<h3>添加对象属性：图书信息</h3>
+			<p>{{book}}</p>
+			<ul>
+				<li v-for="(value,key,index) in book">{{index}}-{{key}}:{{value}}</li>
+			</ul>
+			<h3>添加普通数组：整数</h3>
+			<p v-once>{{numbers}}</p>
+			<p>{{numbers}}</p>
+		</div>
+		<script type="text/javascript">
+			//定义模型视图实例			
+			var myViewModel = new Vue({
+				el: "#vue212",
+				data: {
+					items:[{name:'李民明'}],
+					students: [{
+						name: '李阳阳',
+						no: '20190901',
+						sex: '男'
+					}, {
+						name: '张清华',
+						no: '20190802',
+						sex: '女'
+					}],
+					book: {
+						bookname: 'Web前端开发技术-HTML5、CSS3、JavaScript',
+						ISSN: '978-7-302-48863-7',
+						author: '储久良'
+					},
+					numbers: [100, 300, 600, 120, -250, -678]
+				}
+			})
+			console.dir(myViewModel.$data.students) //列出对象的属性
+			//使用Vue.set()给数组的尾部添加新元素			
+			Vue.set(myViewModel.$data.students, myViewModel.students.length, {
+				name: '刘菲革',
+				no: '20190506',
+				sex: '男'
+			})
+			//使用Vue实例对象的$set()给数组的尾部添加新元素
+			myViewModel.$set(myViewModel.students, myViewModel.students.length, {
+				name: '王天生',
+				no: '20190507',
+				sex: '男'
+			})
+			//使用数组的splice()方法在第2元素的位置上添加新元素
+			myViewModel.students.splice(4, 0, {
+				name: '陈雨果',
+				no: '20190703',
+				sex: '女'
+			})
+			//直接向data中的数组赋值
+			myViewModel.students[5] = {
+				name: '超雨果',
+				no: '20190103',
+				sex: '女'
+			}
+			console.dir(myViewModel.$data.students)
+			//给book对象添加新属性的方法-Vue实例的$set()
+			myViewModel.$set(myViewModel.book, "date", "2019-10-01");
+			Vue.set(myViewModel.$data.book, "press", "清华大学出版社");
+			//添加和删除普通数组元素
+			myViewModel.numbers.push(567); //在数组尾部添加
+			myViewModel.numbers.splice(1, 1); //删除数组中从第2个元素开始的1个元素
+		</script>
+	</body>
+</html>

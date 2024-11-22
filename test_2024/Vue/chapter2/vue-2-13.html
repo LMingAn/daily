@@ -1,0 +1,99 @@
+<!-- vue-2-13.html -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Vue中数组更新方法的应用</title>
+		<script type="text/javascript" src="../vue/js/vue.js"></script>
+	</head>
+	<body>
+		<div id="vue213">
+			<h3>更新数组元素的方法-变异方法:</h3>
+			<p v-once>排序前数据：{{numbers}}</p>
+			<button type="button" @click="sort()">排序数组元素</button>
+			<button type="button" @click="reverse()">逆序数组元素</button>
+			<p style="color:red;">【{{indexArr}}】后数据：{{numbers}}</p>
+			<p v-once>原始数组元素{{items}}</p>
+			<button type="button" @click="add()">添加数组元素3个</button>
+			<ul>
+				<li v-for="item in items">{{item.name}}</li>
+			</ul>
+			<button type="button" @click="deleteArr()">删除数组元素2个</button>
+			<p>被删除的元素有：{{el1}}-{{el2}}</p>
+			<h3>更新数组元素的方法-非变异方法：</h3>
+			<p>原数组：{{numbers}}</p>
+			<p>slice()-新数组：{{sliceArr}}</p>
+			<p>concat()-新数组：{{concatArr}}</p>
+			<p>filter()-新数组：{{filterArr}}</p>
+			<p>filterM()匹配-新数组：{{filterArrM}}</p>
+			<button type="button" @click="slice()">slice()生成新数组</button>
+			<button type="button" @click="concat()">concat()生成新数组</button>
+			<button type="button" @click="filter()">filter()过滤元素</button>
+			<button type="button" @click="filterM()">filterM()匹配</button>
+		</div>
+		<script type="text/javascript">
+			//定义模型视图实例		
+			var myViewModel = new Vue({
+				el: "#vue213",
+				data: {
+					indexArr: '排序',
+					numbers: ['aaaaa', 'fff', 'bbbb', 'ccccc', 'xxyyzz', 'ggss'],
+					items: [{
+						name: '李民明'
+					}, {
+						name: ' 李诚信'
+					}],
+					sliceArr: [],
+					concatArr: [],
+					filterArr: [],
+					filterArrM: [],
+					el1: '',
+					el2: '',
+				},
+				methods: {
+					add: function() { // 在数组尾部添加
+						this.items.push({
+							name: 'push'
+						}); 
+						this.items.unshift({ // 在数组首部添加
+							name: 'unshift'
+						}); 
+						this.items.splice(this.items.length, 0, {  // 在数组尾部添加
+							name: 'splice'
+						});
+					},
+					sort: function() {
+						this.indexArr = '排序';
+						this.numbers = this.numbers.sort()
+					},
+					deleteArr: function() {
+						this.el1 = myViewModel.items.pop();
+						this.el2 = myViewModel.items.shift();
+					},
+					reverse: function() {
+						this.indexArr = '逆序';
+						return this.numbers.reverse()
+					},
+					slice: function() {
+						if (this.numbers.length >= 2) {
+							this.sliceArr = this.numbers.slice(1, this.numbers.length - 1)
+						}
+					},
+					concat: function() {
+						this.concatArr = this.numbers.concat(["vvrr", "ssee", "kkkk"])
+					},
+					filter: function() {
+						this.filterArr = this.numbers.filter(function(member) {
+							return member.length <= 4
+						})
+					},
+					filterM: function() {
+						myViewModel.filterArrM = myViewModel.items.filter(function(item) {
+							return item.name.match(/李/)
+						})
+					},
+				}
+			})
+		</script>
+	</body>
+</html>

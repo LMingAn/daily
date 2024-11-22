@@ -1,0 +1,78 @@
+<!-- vue-2-8.html -->
+<!DOCTYPE html>
+<html>
+	<head>         
+		<meta charset="utf-8">
+		<title>watch属性综合应用</title>
+		<script src="../vue/js/vue.js"></script>
+	</head>
+	<body>
+		<h2>watch属性综合应用</h2>
+		<div id="vue28">
+			<h3>简单数据:学费</h3>
+			<p v-once>原学费：{{tuition}}元</p>
+			<p>变更后学费：{{tuition}}元</p>
+			<h3>数组：班级列表</h3>
+			<ul>
+				<li v-for="classname in classnames">{{classname}}</li>
+			</ul>
+			<h3>对象：学生信息</h3>
+			<p v-once>初始化数据：姓名：{{student.name}},年龄：{{student.age}},性别：{{student.sex}}</p>
+			<p>变化后数据：姓名：{{student.name}},年龄：{{student.age}},性别：{{student.sex}}</p>
+			<p>本学期新开课程：{{course.name}}</p>			
+		</div>
+		<script>
+			var myViewModel = new Vue({
+				el: '#vue28',
+				data: {
+					tuition: 6500,
+					classnames: ['17软件2班', '18计算机1班', '18信管', '18电信1班'],
+					student: {
+						name: '储久良',
+						age: '45',
+						sex: '男'
+					},
+					course: {
+						name: 'Web前端框架开发技术'
+					}
+				},
+				watch: {
+					//普通的watch监听 
+					tuition(newValue, oldValue) {
+						this.tuition = newValue
+						console.log("tuition: " + newValue, oldValue);
+					},
+					//监听一个对象中的属性，侦听后立即执行
+					'course.name': {
+						handler(newValue, oldValue) {
+							this.course.name = newValue
+						},
+						//设置immediate为true，代表该回调将会在侦听开始之后被立即调用
+						immediate: true
+					},
+					student: {
+						//深度监听，可监听到对象、数组的变化 
+						handler(newValue, oldValue) {
+							console.log("student.name: " + newValue.name + oldValue.name);
+						},
+						deep: true,
+					},
+					classnames: {
+						handler(newValue, oldValue) {
+							for (let i = 0; i < newValue.length; i++) {
+								if (oldValue[i] != newValue[i]) {
+									console.log(newValue)
+								}
+							}
+						},
+						deep: true
+					}
+				}
+			})
+			myViewModel.tuition = 5000
+			myViewModel.student.name = '张晓娟'
+			myViewModel.student.sex = '女'
+			myViewModel.classnames.splice(2, 1, '18会计6班')
+		</script>     
+	</body>
+</html>

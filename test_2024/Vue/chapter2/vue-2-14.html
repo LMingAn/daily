@@ -1,0 +1,74 @@
+<!-- vue-2-14.html -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>过滤器的应用</title>
+		<style type="text/css">
+			.activea {font-size: 28px;color: red;}
+		</style>
+		<script type="text/javascript" src="../vue.js"> </script>
+	</head>
+	<body>
+		<div id="vue214">
+			<h3>过滤器应用1-大小写字母转换</h3>
+			<hr>
+			<p>原信息：{{message}}</p>
+			<p>大写信息：{{message|upper}}</p>
+			<p>先小写、再首字母大写信息：{{message|lower|capitalize}}</p>
+			<h3>过滤器应用2-人民币/美元符号转换</h3>
+			<hr>
+			<p>总量：{{total | toCNY()}}</p>
+			<p>单价: {{money | toCNY()}}</p>
+			<h1>总价：{{ price | toFixed(2) | toUSD }}</h1>
+			<h3>过滤器应用3-样式属性绑定</h3>
+			<hr>
+			<p v-bind:class="myClass|lower">绑定class-{{myClass|lower}}字体大小28px、颜色为红色</p>
+		</div>
+		<script>
+			// 1. 定义全局过滤器使用filter,位置在Vue实例之前
+			Vue.filter('toCNY', function(money) {
+				return '¥' + money;
+			});
+			Vue.filter('capitalize', function(value) {
+				//每个单词首字母大写
+				if (!value) return ''
+				//按空格提取单词,再将每单词首字母大写
+				value = value.toString().split(' ');
+				for (var i = 0; i < value.length; i++) {
+					value[i] = value[i].charAt(0).toUpperCase() + value[i].slice(1)
+				}
+				return value
+			});
+			var myViewModel = new Vue({
+				el: '#vue214',
+				data: {
+					message: "This is a Book.",
+					myClass: 'activeA',
+					money: 123.224,
+					total: 100,
+				},
+				computed: {
+					price: function() {
+						return this.money * this.total;
+					}
+				},
+				filters: {
+					// 2. 局部过滤器,使用filters
+					upper: function(text) {
+						return text.toUpperCase()
+					},
+					lower: function(text) {
+						return text.toLowerCase()
+					},
+					toFixed: function(price, limit) {
+						return price.toFixed(limit)
+					},
+					toUSD: function(price) {
+						return `$${price}`
+					}
+				}
+			});
+		</script>
+	</body>
+</html>

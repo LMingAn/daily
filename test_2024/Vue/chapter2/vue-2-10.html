@@ -1,0 +1,118 @@
+<!-- vue-2-10.html -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>控制台对象方法的应用介绍</title>
+		<script type="text/javascript" src="../vue/js/vue.js"></script>
+	</head>
+	<body>
+		<div id="vue210">
+			<h3>{{information}}</h3>
+			<button type="button" @click="display()">控制台方法的应用</button>
+		</div>
+		<script type="text/javascript">
+			arr = new Array(10000000)
+			for (var i = 0; i < 10000; i++) {
+				arr.push(i)
+			}
+			console.profile("arr + arr")
+			arr + arr
+			console.profileEnd("arr + arr")
+			var myViewModel = new Vue({
+				el: '#vue210',
+				data: {
+					information: "console方法的使用",
+					number: 13.23455,
+					score: 0,
+					student: {
+						name: '李丛玲',
+						age: 21,
+						study: function() {
+							console.log('我喜欢学习Vue.js!')
+						}
+					}
+				},
+				methods: {
+					sum: function(n1, n2) {
+						console.trace();
+						return n1 + n2
+					},
+					sum1: function(n1, n2) {
+						return this.sum(n1, n2)
+					},
+					sum2: function(n1, n2) {
+						return this.sum1(n1, n2)
+					},
+					sumA: function(n) {
+						for (var j = 0; j < n; j++) {}
+					},
+					sumB: function() {
+						for (var i = 0; i < 100; i++) {
+							this.sumA(1000)
+						}
+					},
+					display: function() {
+						//正常信息输出-5个方法
+						console.log("这是正常信息输出")
+						console.info("这是info")
+						console.debug("这是debug")
+						console.warn("这是warn")
+						console.error("这是error")
+						//占位符应用-5种
+						console.log("%d年%d月%d日", 2019, 09, 03);
+						console.log("%i", this.number)
+						console.log("圆周率是%f", Math.PI);
+						console.log("学生信息:%o", this.student);
+						console.log("学生姓名:%s", this.student.name);
+						console.log("学生姓名:%c" + this.student.name, 'color:red'); //CSS样式%c
+						//分组显示信息（缩进格式）-2组
+						console.group("学习第1小组");
+						console.log("第1组-张小东");
+						console.log("第1组-李大为");
+						console.groupEnd();
+						console.group("学习第2组");
+						console.log("第2组-储久凤");
+						console.log("第2组-王祥云");
+						console.groupEnd();
+						//显示对象的属性和方法
+						console.dir(this.student)
+						//显示对象的innerHTML
+						console.dirxml(this.$el);
+						//判断表达式是否为真
+						console.assert(this.number, '什么都不做'); //number=13.23455
+						console.assert(this.score, '%s工作', '无法'); //score=0
+						console.assert(false, "test") //  Assertion failed  test
+						console.assert(false, "test", "test2") // Assertion failed  test   test2
+						console.assert(true, "test")
+						//跟踪函数调用轨迹,sum()中调用trace()方法
+						console.log(this.sum2(100, 100)) //trace
+						//计时功能
+						console.time("运行计时"); //计时开始
+						for (var i = 0; i < 1000; i++) {
+							for (var j = 0; j < 1000; j++) {}
+						}
+						console.timeEnd("运行计时"); //计时结束
+						//性能分析
+						console.profile("sumB()")
+						this.sumB()
+						console.profileEnd("sumB()")
+						//表格输出对象和数组
+						//定义对象并表格输出
+						var myObject = {
+							name: '储久良',
+							age: 50,
+							sex: '男'
+						};
+						console.log(myObject);
+						console.table(myObject);
+						//定义数组并表格输出
+						var myArray = [100, 200, -300, 120, 89];
+						console.log(myArray);
+						console.table(myArray);
+					}
+				}
+			})
+		</script>
+	</body>
+</html>
