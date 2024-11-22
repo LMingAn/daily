@@ -1,0 +1,9 @@
+﻿  work_5_21.cpp
+D:\basic software\VS Project\test_2024\work_5_21\work_5_21.cpp(54,5): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\basic software\VS Project\test_2024\work_5_21\work_5_21.cpp(79,9): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\basic software\VS Project\test_2024\work_5_21\work_5_21.cpp(105,13): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\basic software\VS Project\test_2024\work_5_21\work_5_21.cpp(134,13): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\basic software\VS Project\test_2024\work_5_21\work_5_21.cpp(189,13): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\basic software\VS Project\test_2024\work_5_21\work_5_21.cpp(210,1): warning C4326: “main”的返回类型应为“int”而非“void”
+D:\basic software\VS Project\test_2024\work_5_21\work_5_21.cpp(225,13): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  work_5_21.vcxproj -> D:\basic software\VS Project\test_2024\work_5_21\x64\Debug\work_5_21.exe

@@ -1,0 +1,14 @@
+D:\basic software\VS Project\test_2024\C#\Ex1-1\bin\Debug\net8.0\Ex1-1.exe
+D:\basic software\VS Project\test_2024\C#\Ex1-1\bin\Debug\net8.0\Ex1-1.deps.json
+D:\basic software\VS Project\test_2024\C#\Ex1-1\bin\Debug\net8.0\Ex1-1.runtimeconfig.json
+D:\basic software\VS Project\test_2024\C#\Ex1-1\bin\Debug\net8.0\Ex1-1.dll
+D:\basic software\VS Project\test_2024\C#\Ex1-1\bin\Debug\net8.0\Ex1-1.pdb
+D:\basic software\VS Project\test_2024\C#\Ex1-1\obj\Debug\net8.0\Ex1-1.GeneratedMSBuildEditorConfig.editorconfig
+D:\basic software\VS Project\test_2024\C#\Ex1-1\obj\Debug\net8.0\Ex1-1.AssemblyInfoInputs.cache
+D:\basic software\VS Project\test_2024\C#\Ex1-1\obj\Debug\net8.0\Ex1-1.AssemblyInfo.cs
+D:\basic software\VS Project\test_2024\C#\Ex1-1\obj\Debug\net8.0\Ex1-1.csproj.CoreCompileInputs.cache
+D:\basic software\VS Project\test_2024\C#\Ex1-1\obj\Debug\net8.0\Ex1-1.dll
+D:\basic software\VS Project\test_2024\C#\Ex1-1\obj\Debug\net8.0\refint\Ex1-1.dll
+D:\basic software\VS Project\test_2024\C#\Ex1-1\obj\Debug\net8.0\Ex1-1.pdb
+D:\basic software\VS Project\test_2024\C#\Ex1-1\obj\Debug\net8.0\Ex1-1.genruntimeconfig.cache
+D:\basic software\VS Project\test_2024\C#\Ex1-1\obj\Debug\net8.0\ref\Ex1-1.dll

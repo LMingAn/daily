@@ -1,0 +1,14 @@
+D:\basic software\VS Project\test_2024\C#\test_10.21\bin\Debug\net8.0\test_10.21.exe
+D:\basic software\VS Project\test_2024\C#\test_10.21\bin\Debug\net8.0\test_10.21.deps.json
+D:\basic software\VS Project\test_2024\C#\test_10.21\bin\Debug\net8.0\test_10.21.runtimeconfig.json
+D:\basic software\VS Project\test_2024\C#\test_10.21\bin\Debug\net8.0\test_10.21.dll
+D:\basic software\VS Project\test_2024\C#\test_10.21\bin\Debug\net8.0\test_10.21.pdb
+D:\basic software\VS Project\test_2024\C#\test_10.21\obj\Debug\net8.0\test_10.21.GeneratedMSBuildEditorConfig.editorconfig
+D:\basic software\VS Project\test_2024\C#\test_10.21\obj\Debug\net8.0\test_10.21.AssemblyInfoInputs.cache
+D:\basic software\VS Project\test_2024\C#\test_10.21\obj\Debug\net8.0\test_10.21.AssemblyInfo.cs
+D:\basic software\VS Project\test_2024\C#\test_10.21\obj\Debug\net8.0\test_10.21.csproj.CoreCompileInputs.cache
+D:\basic software\VS Project\test_2024\C#\test_10.21\obj\Debug\net8.0\test_10.21.dll
+D:\basic software\VS Project\test_2024\C#\test_10.21\obj\Debug\net8.0\refint\test_10.21.dll
+D:\basic software\VS Project\test_2024\C#\test_10.21\obj\Debug\net8.0\test_10.21.pdb
+D:\basic software\VS Project\test_2024\C#\test_10.21\obj\Debug\net8.0\test_10.21.genruntimeconfig.cache
+D:\basic software\VS Project\test_2024\C#\test_10.21\obj\Debug\net8.0\ref\test_10.21.dll

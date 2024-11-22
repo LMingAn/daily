@@ -1,0 +1,16 @@
+D:\basic software\VS Project\test_2024\C#\test_10.21_Win\bin\Debug\net8.0-windows\test_10.21_Win.exe
+D:\basic software\VS Project\test_2024\C#\test_10.21_Win\bin\Debug\net8.0-windows\test_10.21_Win.deps.json
+D:\basic software\VS Project\test_2024\C#\test_10.21_Win\bin\Debug\net8.0-windows\test_10.21_Win.runtimeconfig.json
+D:\basic software\VS Project\test_2024\C#\test_10.21_Win\bin\Debug\net8.0-windows\test_10.21_Win.dll
+D:\basic software\VS Project\test_2024\C#\test_10.21_Win\bin\Debug\net8.0-windows\test_10.21_Win.pdb
+D:\basic software\VS Project\test_2024\C#\test_10.21_Win\obj\Debug\net8.0-windows\test_10._21_Win.Form1.resources
+D:\basic software\VS Project\test_2024\C#\test_10.21_Win\obj\Debug\net8.0-windows\test_10.21_Win.csproj.GenerateResource.cache
+D:\basic software\VS Project\test_2024\C#\test_10.21_Win\obj\Debug\net8.0-windows\test_10.21_Win.GeneratedMSBuildEditorConfig.editorconfig
+D:\basic software\VS Project\test_2024\C#\test_10.21_Win\obj\Debug\net8.0-windows\test_10.21_Win.AssemblyInfoInputs.cache
+D:\basic software\VS Project\test_2024\C#\test_10.21_Win\obj\Debug\net8.0-windows\test_10.21_Win.AssemblyInfo.cs
+D:\basic software\VS Project\test_2024\C#\test_10.21_Win\obj\Debug\net8.0-windows\test_10.21_Win.csproj.CoreCompileInputs.cache
+D:\basic software\VS Project\test_2024\C#\test_10.21_Win\obj\Debug\net8.0-windows\test_10.21_Win.dll
+D:\basic software\VS Project\test_2024\C#\test_10.21_Win\obj\Debug\net8.0-windows\refint\test_10.21_Win.dll
+D:\basic software\VS Project\test_2024\C#\test_10.21_Win\obj\Debug\net8.0-windows\test_10.21_Win.pdb
+D:\basic software\VS Project\test_2024\C#\test_10.21_Win\obj\Debug\net8.0-windows\test_10.21_Win.genruntimeconfig.cache
+D:\basic software\VS Project\test_2024\C#\test_10.21_Win\obj\Debug\net8.0-windows\ref\test_10.21_Win.dll

@@ -1,0 +1,12 @@
+D:\basic software\VS Project\test_2024\C#\test_10.11_WinNF\bin\Debug\test_10.11_WinNF.exe.config
+D:\basic software\VS Project\test_2024\C#\test_10.11_WinNF\bin\Debug\test_10.11_WinNF.exe
+D:\basic software\VS Project\test_2024\C#\test_10.11_WinNF\bin\Debug\test_10.11_WinNF.pdb
+D:\basic software\VS Project\test_2024\C#\test_10.11_WinNF\obj\Debug\test_10.11_WinNF.csproj.AssemblyReference.cache
+D:\basic software\VS Project\test_2024\C#\test_10.11_WinNF\obj\Debug\test_10._11_WinNF.Form1.resources
+D:\basic software\VS Project\test_2024\C#\test_10.11_WinNF\obj\Debug\test_10._11_WinNF.Properties.Resources.resources
+D:\basic software\VS Project\test_2024\C#\test_10.11_WinNF\obj\Debug\test_10.11_WinNF.csproj.GenerateResource.cache
+D:\basic software\VS Project\test_2024\C#\test_10.11_WinNF\obj\Debug\test_10.11_WinNF.csproj.CoreCompileInputs.cache
+D:\basic software\VS Project\test_2024\C#\test_10.11_WinNF\obj\Debug\test_10.11_WinNF.exe
+D:\basic software\VS Project\test_2024\C#\test_10.11_WinNF\obj\Debug\test_10.11_WinNF.pdb
+D:\basic software\VS Project\test_2024\C#\test_10.11_WinNF\obj\Debug\test_10._11_WinNF.Form2.resources
+D:\basic software\VS Project\test_2024\C#\test_10.11_WinNF\obj\Debug\test_10._11_WinNF.Form3.resources

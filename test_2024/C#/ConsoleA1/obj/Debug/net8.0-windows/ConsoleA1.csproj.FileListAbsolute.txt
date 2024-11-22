@@ -1,0 +1,16 @@
+D:\basic software\VS Project\test_2024\C#\ConsoleA1\bin\Debug\net8.0-windows\ConsoleA1.exe
+D:\basic software\VS Project\test_2024\C#\ConsoleA1\bin\Debug\net8.0-windows\ConsoleA1.deps.json
+D:\basic software\VS Project\test_2024\C#\ConsoleA1\bin\Debug\net8.0-windows\ConsoleA1.runtimeconfig.json
+D:\basic software\VS Project\test_2024\C#\ConsoleA1\bin\Debug\net8.0-windows\ConsoleA1.dll
+D:\basic software\VS Project\test_2024\C#\ConsoleA1\bin\Debug\net8.0-windows\ConsoleA1.pdb
+D:\basic software\VS Project\test_2024\C#\ConsoleA1\obj\Debug\net8.0-windows\ConsoleA1.Form1.resources
+D:\basic software\VS Project\test_2024\C#\ConsoleA1\obj\Debug\net8.0-windows\ConsoleA1.csproj.GenerateResource.cache
+D:\basic software\VS Project\test_2024\C#\ConsoleA1\obj\Debug\net8.0-windows\ConsoleA1.GeneratedMSBuildEditorConfig.editorconfig
+D:\basic software\VS Project\test_2024\C#\ConsoleA1\obj\Debug\net8.0-windows\ConsoleA1.AssemblyInfoInputs.cache
+D:\basic software\VS Project\test_2024\C#\ConsoleA1\obj\Debug\net8.0-windows\ConsoleA1.AssemblyInfo.cs
+D:\basic software\VS Project\test_2024\C#\ConsoleA1\obj\Debug\net8.0-windows\ConsoleA1.csproj.CoreCompileInputs.cache
+D:\basic software\VS Project\test_2024\C#\ConsoleA1\obj\Debug\net8.0-windows\ConsoleA1.dll
+D:\basic software\VS Project\test_2024\C#\ConsoleA1\obj\Debug\net8.0-windows\refint\ConsoleA1.dll
+D:\basic software\VS Project\test_2024\C#\ConsoleA1\obj\Debug\net8.0-windows\ConsoleA1.pdb
+D:\basic software\VS Project\test_2024\C#\ConsoleA1\obj\Debug\net8.0-windows\ConsoleA1.genruntimeconfig.cache
+D:\basic software\VS Project\test_2024\C#\ConsoleA1\obj\Debug\net8.0-windows\ref\ConsoleA1.dll

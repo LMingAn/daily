@@ -1,0 +1,21 @@
+﻿  Main.cpp
+D:\basic software\VS Project\test_2024\Work\Main.cpp(549,26): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+D:\basic software\VS Project\test_2024\Work\Main.cpp(581,22): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+D:\basic software\VS Project\test_2024\Work\Main.cpp(600,17): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+D:\basic software\VS Project\test_2024\Work\Main.cpp(609,17): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+  load.cpp
+D:\basic software\VS Project\test_2024\Work\load.cpp(256,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\basic software\VS Project\test_2024\Work\load.cpp(297,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\basic software\VS Project\test_2024\Work\load.cpp(535,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\basic software\VS Project\test_2024\Work\load.cpp(572,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\basic software\VS Project\test_2024\Work\load.cpp(1108,18): warning C4305: “=”: 从“double”到“float”截断
+D:\basic software\VS Project\test_2024\Work\load.cpp(1110,18): warning C4305: “=”: 从“double”到“float”截断
+D:\basic software\VS Project\test_2024\Work\load.cpp(1145,18): warning C4305: “参数”: 从“int”到“char”截断
+D:\basic software\VS Project\test_2024\Work\load.cpp(1145,18): warning C4309: “参数”: 截断常量值
+D:\basic software\VS Project\test_2024\Work\load.cpp(1151,18): warning C4305: “参数”: 从“int”到“char”截断
+D:\basic software\VS Project\test_2024\Work\load.cpp(1151,18): warning C4309: “参数”: 截断常量值
+D:\basic software\VS Project\test_2024\Work\load.cpp(138,1): warning C4715: “LinkLocate”: 不是所有的控件路径都返回值
+D:\basic software\VS Project\test_2024\Work\load.cpp(197,1): warning C4715: “LinkInsert”: 不是所有的控件路径都返回值
+D:\basic software\VS Project\test_2024\Work\load.cpp(160,1): warning C4715: “SeqInsert”: 不是所有的控件路径都返回值
+D:\basic software\VS Project\test_2024\Work\load.cpp(220,1): warning C4715: “LinkInsert”: 不是所有的控件路径都返回值
+  Work.vcxproj -> D:\basic software\VS Project\test_2024\Work\x64\Debug\Work.exe

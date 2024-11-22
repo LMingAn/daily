@@ -1,0 +1,8 @@
+﻿  84campusnav.c
+F:\work\数据结构实训\教师文件\实验10.3\校园导航\84campusnav.c(37,12): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+F:\work\数据结构实训\教师文件\实验10.3\校园导航\84campusnav.c(38,2): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+F:\work\数据结构实训\教师文件\实验10.3\校园导航\84campusnav.c(39,2): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+F:\work\数据结构实训\教师文件\实验10.3\校园导航\84campusnav.c(41,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+F:\work\数据结构实训\教师文件\实验10.3\校园导航\84campusnav.c(47,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+F:\work\数据结构实训\教师文件\实验10.3\校园导航\84campusnav.c(119,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  work_5_22.vcxproj -> D:\basic software\VS Project\test_2024\work_5_22\x64\Debug\work_5_22.exe
