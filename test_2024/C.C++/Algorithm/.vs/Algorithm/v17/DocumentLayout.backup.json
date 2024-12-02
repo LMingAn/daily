@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "D:\\basic software\\VS Project\\test_2024\\C.C\u002B\u002B\\Algorithm\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2CD60F99-1B1C-41BB-92BF-046E48829E22}|Algorithm.vcxproj|D:\\basic software\\VS Project\\test_2024\\C.C\u002B\u002B\\Algorithm\\matlab.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2CD60F99-1B1C-41BB-92BF-046E48829E22}|Algorithm.vcxproj|solutionrelative:matlab.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2CD60F99-1B1C-41BB-92BF-046E48829E22}|Algorithm.vcxproj|D:\\basic software\\VS Project\\test_2024\\C.C\u002B\u002B\\Algorithm\\work1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2CD60F99-1B1C-41BB-92BF-046E48829E22}|Algorithm.vcxproj|solutionrelative:work1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2CD60F99-1B1C-41BB-92BF-046E48829E22}|Algorithm.vcxproj|D:\\basic software\\VS Project\\test_2024\\C.C\u002B\u002B\\Algorithm\\work2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2CD60F99-1B1C-41BB-92BF-046E48829E22}|Algorithm.vcxproj|solutionrelative:work2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{2CD60F99-1B1C-41BB-92BF-046E48829E22}|Algorithm.vcxproj|D:\\basic software\\VS Project\\test_2024\\C.C\u002B\u002B\\Algorithm\\report.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2CD60F99-1B1C-41BB-92BF-046E48829E22}|Algorithm.vcxproj|solutionrelative:report.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,48 +14,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 247,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "matlab.cpp",
-              "DocumentMoniker": "D:\\basic software\\VS Project\\test_2024\\C.C\u002B\u002B\\Algorithm\\matlab.cpp",
-              "RelativeDocumentMoniker": "matlab.cpp",
-              "ToolTip": "D:\\basic software\\VS Project\\test_2024\\C.C\u002B\u002B\\Algorithm\\matlab.cpp",
-              "RelativeToolTip": "matlab.cpp",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAEEAAAAfAAAAAAAAAA==",
+              "Title": "report.cpp",
+              "DocumentMoniker": "D:\\basic software\\VS Project\\test_2024\\C.C\u002B\u002B\\Algorithm\\report.cpp",
+              "RelativeDocumentMoniker": "report.cpp",
+              "ToolTip": "D:\\basic software\\VS Project\\test_2024\\C.C\u002B\u002B\\Algorithm\\report.cpp",
+              "RelativeToolTip": "report.cpp",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAmwHoAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-13T17:07:38.808Z",
+              "WhenOpened": "2024-11-29T07:10:00.448Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "work1.cpp",
-              "DocumentMoniker": "D:\\basic software\\VS Project\\test_2024\\C.C\u002B\u002B\\Algorithm\\work1.cpp",
-              "RelativeDocumentMoniker": "work1.cpp",
-              "ToolTip": "D:\\basic software\\VS Project\\test_2024\\C.C\u002B\u002B\\Algorithm\\work1.cpp",
-              "RelativeToolTip": "work1.cpp",
-              "ViewState": "AgIAACEAAAAAAAAAAIAwwCEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-06T06:43:03.174Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "work2.cpp",
-              "DocumentMoniker": "D:\\basic software\\VS Project\\test_2024\\C.C\u002B\u002B\\Algorithm\\work2.cpp",
-              "RelativeDocumentMoniker": "work2.cpp",
-              "ToolTip": "D:\\basic software\\VS Project\\test_2024\\C.C\u002B\u002B\\Algorithm\\work2.cpp",
-              "RelativeToolTip": "work2.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-06T06:43:15.132Z"
             }
           ]
         }
