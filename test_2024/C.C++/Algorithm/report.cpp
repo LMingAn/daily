@@ -132,10 +132,45 @@ using namespace std;
 
 
 //6
+void makeSched(int n, vector<vector<pair<int, int>>>& sched)
+{
+	int players = 1 << n;
+	for (int day = 0; day < (n - 1); day++)//遍历比赛天数
+	{
+		for (int player = 0; player < players; player++)//遍历选手编号
+		{
+			//选取对应天数 day 所选维度 1<<day ，再通过异或操作将第 day 位翻转，保证双方选手仅第 day 位不同 -- “超立方体维度”
+			int opponent = player ^ (1 << day);//对手编号
+			if (player < opponent)
+				sched[day].push_back({ player + 1, opponent + 1 });
+		}
+	}
+}
+
+void printSched(vector<vector<pair<int, int>>>& sched)
+{
+	cout << "比赛日程表:" << endl;
+	for (int day = 0; day < sched.size(); day++)
+	{
+		cout << "第" << day + 1 << "天：";
+		for (const auto& match : sched[day])
+		{
+			cout << "(" << match.first << " vs " << match.second << ")";
+		}
+		cout << endl;
+	}
+}
+
 int main()
 {
 	int n = 0;
+	cout << "输入n（选手数为2^n，n不能小于2）:";
 	cin >> n;
+	if (n < 2)
+		cout << "n值小于2，结束程序";
 	int size = 1 << n;
-
+	vector<vector<pair<int, int>>> sched(n - 1);
+	makeSched(n, sched);
+	printSched(sched);
+	return 0;
 }
