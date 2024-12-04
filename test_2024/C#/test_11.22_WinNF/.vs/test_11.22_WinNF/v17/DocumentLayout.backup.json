@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\basic software\\VS Project\\test_2024\\C#\\test_11.22_WinNF\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D3F9AD86-9737-4B4E-BD25-4C1FF9C7C324}|test_11.22_WinNF.csproj|d:\\basic software\\vs project\\test_2024\\c#\\test_11.22_winnf\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3F9AD86-9737-4B4E-BD25-4C1FF9C7C324}|test_11.22_WinNF.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D3F9AD86-9737-4B4E-BD25-4C1FF9C7C324}|test_11.22_WinNF.csproj|D:\\basic software\\VS Project\\test_2024\\C#\\test_11.22_WinNF\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3F9AD86-9737-4B4E-BD25-4C1FF9C7C324}|test_11.22_WinNF.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3F9AD86-9737-4B4E-BD25-4C1FF9C7C324}|test_11.22_WinNF.csproj|d:\\basic software\\vs project\\test_2024\\c#\\test_11.22_winnf\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D3F9AD86-9737-4B4E-BD25-4C1FF9C7C324}|test_11.22_WinNF.csproj|D:\\basic software\\VS Project\\test_2024\\C#\\test_11.22_WinNF\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D3F9AD86-9737-4B4E-BD25-4C1FF9C7C324}|test_11.22_WinNF.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3F9AD86-9737-4B4E-BD25-4C1FF9C7C324}|test_11.22_WinNF.csproj|d:\\basic software\\vs project\\test_2024\\c#\\test_11.22_winnf\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3F9AD86-9737-4B4E-BD25-4C1FF9C7C324}|test_11.22_WinNF.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D3F9AD86-9737-4B4E-BD25-4C1FF9C7C324}|test_11.22_WinNF.csproj|d:\\basic software\\vs project\\test_2024\\c#\\test_11.22_winnf\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D3F9AD86-9737-4B4E-BD25-4C1FF9C7C324}|test_11.22_WinNF.csproj|solutionrelative:form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3F9AD86-9737-4B4E-BD25-4C1FF9C7C324}|test_11.22_WinNF.csproj|d:\\basic software\\vs project\\test_2024\\c#\\test_11.22_winnf\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3F9AD86-9737-4B4E-BD25-4C1FF9C7C324}|test_11.22_WinNF.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,20 +26,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 247,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Form4.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\basic software\\VS Project\\test_2024\\C#\\test_11.22_WinNF\\Form4.cs",
+              "RelativeDocumentMoniker": "Form4.cs",
+              "ToolTip": "D:\\basic software\\VS Project\\test_2024\\C#\\test_11.22_WinNF\\Form4.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "Form4.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T12:25:55.87Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\basic software\\VS Project\\test_2024\\C#\\test_11.22_WinNF\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\basic software\\VS Project\\test_2024\\C#\\test_11.22_WinNF\\Program.cs",
-              "RelativeToolTip": "Program.cs",
+              "ToolTip": "D:\\basic software\\VS Project\\test_2024\\C#\\test_11.22_WinNF\\Program.cs*",
+              "RelativeToolTip": "Program.cs*",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-22T01:45:55.29Z",
@@ -43,13 +63,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Form2.cs",
               "DocumentMoniker": "D:\\basic software\\VS Project\\test_2024\\C#\\test_11.22_WinNF\\Form2.cs",
               "RelativeDocumentMoniker": "Form2.cs",
               "ToolTip": "D:\\basic software\\VS Project\\test_2024\\C#\\test_11.22_WinNF\\Form2.cs",
               "RelativeToolTip": "Form2.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAiwD4AAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAADwvywAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-22T01:44:23.442Z",
               "EditorCaption": ""

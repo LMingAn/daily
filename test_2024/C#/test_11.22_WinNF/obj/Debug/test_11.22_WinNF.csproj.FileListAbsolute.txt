@@ -9,3 +9,5 @@ D:\basic software\VS Project\test_2024\C#\test_11.22_WinNF\obj\Debug\test_11.22_
 D:\basic software\VS Project\test_2024\C#\test_11.22_WinNF\obj\Debug\test_11.22_WinNF.exe
 D:\basic software\VS Project\test_2024\C#\test_11.22_WinNF\obj\Debug\test_11.22_WinNF.pdb
 D:\basic software\VS Project\test_2024\C#\test_11.22_WinNF\obj\Debug\test_11._22_WinNF.Form2.resources
+D:\basic software\VS Project\test_2024\C#\test_11.22_WinNF\obj\Debug\test_11._22_WinNF.Form3.resources
+D:\basic software\VS Project\test_2024\C#\test_11.22_WinNF\obj\Debug\test_11._22_WinNF.Form4.resources
