@@ -1,0 +1,3 @@
+Game over!
+Final score: 11 
+The correct color sequence is: Blue, Blue, Red
